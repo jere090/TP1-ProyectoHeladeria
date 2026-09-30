@@ -7,40 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
+    <header class="barra arriba"> 
         <h1>heladeria Pepe</h1>
-        <nav>
+        <nav uncle>
             <a href="/productos.html">Productos</a>
             <a href="/index.html">inicio</a>
+            <a href="#info">Datos</a>
+            <a href="#produ">jijo</a>
         </nav>
     </header>
-    <hero>
-        <h3>Los mejores Helados</h3>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-        <h4>falta imagen de fondo</h4>
-    </hero>
-    <h3>Sobre Nosotros</h3>
-    <p>Hola, nosotros la Heladeria Pepe es una con una tradicion de mas de 100 años, trabajando en mejorar nuestro sabor cada ves mas.</p>
-    <form>
-        <fieldset>
-            <legend><em><strong><h3>Contacto</h3></strong></em></legend>
-            <div>
-                <label for="id-apelnom">Nombre y Apellido:</label>
-                <input type="text" name="apelnom" id="id-apelnom" placeholder="Jeremias Molina" required minlength="7">
+    <section class="hero">  
+        <div class="contenido-hero">
+            <h3>Los mejores Helados de San Nicolas</h3>
+        </div>    
+    </section> 
+    <section class="principal">
+        <div class="tarjeta-contenido">
+            <div class="biografia">
+                <h2>Sobre Nosotros</h2>
+                <p>Hola, nosotros la Heladeria Pepe es una con una tradicion de mas de 100 años, trabajando en mejorar nuestro sabor cada ves mas.</p>
             </div>
-            <div>
-                <label for="id-email">Email:</label>
-                <input type="email" name="email" id="id-email" placeholder="Pepeargento@gmail.com" required minlength="11">
+            <div class="Contacto">
+                <h2>Contacto</h2>
+                <form class="formulario">
+                    <div>
+                        <label for="id-apelnom">Nombre y Apellido:</label>
+                        <input type="text" name="apelnom" id="id-apelnom" placeholder="Jeremias Molina" required minlength="7">
+                    </div>
+                    <div>
+                        <label for="id-email">Email:</label>
+                        <input type="email" name="email" id="id-email" placeholder="Pepeargento@gmail.com" required minlength="11">
+                    </div>
+                    <div>
+                        <label for="id-mensaje">Mensaje:</label>
+                        <input type="text" name="Mensaje" id="id-mensaje" placeholder="tengo un pedido de ..." required maxlength="250">
+                    </div>
+                    <button type="button">Terminar formulario</button>
+                </form>
             </div>
-            <div>
-                <label for="id-mensaje">Mensaje:</label>
-                <input type="text" name="Mensaje" id="id-mensaje" placeholder="tengo un pedido de ..." required maxlength="250">
-            </div>
-        </fieldset>
-        <button type="button">Terminar formulario</button>
-    </form>
-    <footer>
-            <strong><h2>Datos</h2></strong>
+        </div>
+    </section>
+    <footer id="info" class="barra abajo">
                 <ul>
                     <h3>Direccion</h3>
                 <li>Echebarrier 4321</li>
